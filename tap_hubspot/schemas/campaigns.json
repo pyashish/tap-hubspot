@@ -1,6 +1,32 @@
 {
   "type": "object",
   "properties": {
+    "id": {
+      "type": ["null", "string"]
+    },
+    "updatedAt": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "createdAt": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "archived": {
+      "type": ["null", "boolean"]
+    },
+    "name": {
+      "type": ["null", "string"]
+    },
+    "type": {
+      "type": ["null", "string"]
+    },
+    "subType": {
+      "type": ["null", "string"]
+    },
+    "subject": {
+      "type": ["null", "string"]
+    },
     "appId": {
       "type": ["null", "integer"]
     },
@@ -8,6 +34,12 @@
       "type": ["null", "string"]
     },
     "contentId": {
+      "type": ["null", "integer"]
+    },
+    "numIncluded": {
+      "type": ["null", "integer"]
+    },
+    "numQueued": {
       "type": ["null", "integer"]
     },
     "counters": {
@@ -65,27 +97,6 @@
           "type": ["null", "integer"]
         }
       }
-    },
-    "id": {
-      "type": ["null", "integer"]
-    },
-    "name": {
-      "type": ["null", "string"]
-    },
-    "numIncluded": {
-      "type": ["null", "integer"]
-    },
-    "numQueued": {
-      "type": ["null", "integer"]
-    },
-    "subType": {
-      "type": ["null", "string"]
-    },
-    "subject": {
-      "type": ["null", "string"]
-    },
-    "type": {
-      "type": ["null", "string"]
     }
   }
 }

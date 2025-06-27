@@ -1,15 +1,38 @@
 {
   "type": "object",
   "properties": {
-    "pipelineId": {
+    "id": {
       "type": ["null", "string"]
+    },
+    "updatedAt": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "createdAt": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "archived": {
+      "type": ["null", "boolean"]
+    },
+    "label": {
+      "type": ["null", "string"]
+    },
+    "active": {
+      "type": ["null", "boolean"]
+    },
+    "displayOrder": {
+      "type": ["null", "integer"]
+    },
+    "staticDefault": {
+      "type": ["null", "boolean"]
     },
     "stages": {
       "type": ["null", "array"],
       "items": {
         "type": "object",
         "properties": {
-          "stageId": {
+          "id": {
             "type": ["null", "string"]
           },
           "label": {
@@ -28,19 +51,7 @@
             "type": ["null", "boolean"]
           }
         }
-      }    
-    },
-    "label": {
-      "type": ["null", "string"]
-    },
-    "active": {
-      "type": ["null", "boolean"]
-    },
-    "displayOrder": {
-      "type": ["null", "integer"]
-    },
-    "staticDefault": {
-      "type": ["null", "boolean"]      
+      }
     }
   }
 }

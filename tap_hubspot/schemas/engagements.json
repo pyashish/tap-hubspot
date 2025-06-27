@@ -1,64 +1,79 @@
 {
   "type": "object",
   "properties": {
-    "engagement_id": {
-      "type": "integer"
+    "id": {
+      "type": ["null", "string"]
     },
-    "lastUpdated": {
+    "updatedAt": {
       "type": ["null", "string"],
       "format": "date-time"
     },
-    "engagement": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "integer"
-        },
-        "portalId": {
-          "type": "integer"
-        },
-        "active": {
-          "type": "boolean"
-        },
-        "createdAt": {
-          "type": ["null", "string"],
-          "format": "date-time"
-        },
-        "lastUpdated": {
-          "type": ["null", "string"],
-          "format": "date-time"
-        },
-        "ownerId": {
-          "type": "integer"
-        },
-        "type": {
-          "type": "string"
-        },
-        "timestamp": {
-          "type": ["null", "string"],
-          "format": "date-time"
-        }
-      }
+    "createdAt": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "archived": {
+      "type": ["null", "boolean"]
+    },
+    "portalId": {
+      "type": ["null", "integer"]
+    },
+    "active": {
+      "type": ["null", "boolean"]
+    },
+    "ownerId": {
+      "type": ["null", "integer"]
+    },
+    "type": {
+      "type": ["null", "string"]
+    },
+    "timestamp": {
+      "type": ["null", "string"],
+      "format": "date-time"
     },
     "associations": {
       "type": ["null", "object"],
       "properties": {
-        "contactIds": {
+        "contacts": {
           "type": ["null", "array"],
           "items": {
-            "type": "integer"
+            "type": ["null", "object"],
+            "properties": {
+              "id": {
+                "type": ["null", "string"]
+              },
+              "type": {
+                "type": ["null", "string"]
+              }
+            }
           }
         },
-        "companyIds": {
+        "companies": {
           "type": ["null", "array"],
           "items": {
-            "type": "integer"
+            "type": ["null", "object"],
+            "properties": {
+              "id": {
+                "type": ["null", "string"]
+              },
+              "type": {
+                "type": ["null", "string"]
+              }
+            }
           }
         },
-        "dealIds": {
+        "deals": {
           "type": ["null", "array"],
           "items": {
-            "type": "integer"
+            "type": ["null", "object"],
+            "properties": {
+              "id": {
+                "type": ["null", "string"]
+              },
+              "type": {
+                "type": ["null", "string"]
+              }
+            }
           }
         }
       }
@@ -66,10 +81,10 @@
     "attachments": {
       "type": ["null", "array"],
       "items": {
-        "type": "object",
+        "type": ["null", "object"],
         "properties": {
           "id": {
-            "type": "integer"
+            "type": ["null", "string"]
           }
         }
       }
@@ -84,23 +99,23 @@
           "type": ["null", "object"],
           "properties": {
             "email": {
-              "type": "string"
+              "type": ["null", "string"]
             },
             "firstName": {
-              "type": "string"
+              "type": ["null", "string"]
             },
             "lastName": {
-              "type": "string"
+              "type": ["null", "string"]
             }
           }
         },
         "to": {
           "type": ["null", "array"],
           "items": {
-            "type": "object",
+            "type": ["null", "object"],
             "properties": {
               "email": {
-                "type": "string"
+                "type": ["null", "string"]
               }
             }
           }
@@ -108,10 +123,10 @@
         "cc": {
           "type": ["null", "array"],
           "items": {
-            "type": "object",
+            "type": ["null", "object"],
             "properties": {
               "email": {
-                "type": "string"
+                "type": ["null", "string"]
               }
             }
           }
@@ -119,10 +134,10 @@
         "bcc": {
           "type": ["null", "array"],
           "items": {
-            "type": "object",
+            "type": ["null", "object"],
             "properties": {
               "email": {
-                "type": "string"
+                "type": ["null", "string"]
               }
             }
           }

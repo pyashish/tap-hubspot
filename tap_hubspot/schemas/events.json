@@ -1,0 +1,76 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": ["null", "string"]
+    },
+    "eventType": {
+      "type": ["null", "string"]
+    },
+    "objectType": {
+      "type": ["null", "string"]
+    },
+    "objectId": {
+      "type": ["null", "string"]
+    },
+    "occurredAt": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "eventTypeId": {
+      "type": ["null", "integer"]
+    },
+    "properties": {
+      "type": ["null", "object"],
+      "properties": {}
+    },
+    "utk": {
+      "type": ["null", "string"]
+    },
+    "email": {
+      "type": ["null", "string"]
+    },
+    "contactId": {
+      "type": ["null", "string"]
+    },
+    "companyId": {
+      "type": ["null", "string"]
+    },
+    "dealId": {
+      "type": ["null", "string"]
+    },
+    "ticketId": {
+      "type": ["null", "string"]
+    },
+    "subscriptionType": {
+      "type": ["null", "string"]
+    },
+    "browserType": {
+      "type": ["null", "string"]
+    },
+    "privacyConsentState": {
+      "type": ["null", "string"]
+    },
+    "sessionId": {
+      "type": ["null", "string"]
+    },
+    "portalId": {
+      "type": ["null", "integer"]
+    },
+    "appId": {
+      "type": ["null", "integer"]
+    },
+    "extraData": {
+      "type": ["null", "object"],
+      "properties": {}
+    },
+    "createdAt": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    }
+  }
+}

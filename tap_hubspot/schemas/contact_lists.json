@@ -1,7 +1,42 @@
 {
     "type": "object",
     "properties": {
+        "id": {
+            "type": ["null", "string"]
+        },
+        "updatedAt": {
+            "type": ["null", "string"],
+            "format": "date-time"
+        },
+        "createdAt": {
+            "type": ["null", "string"],
+            "format": "date-time"
+        },
+        "archived": {
+            "type": ["null", "boolean"]
+        },
+        "name": {
+            "type": ["null", "string"]
+        },
+        "dynamic": {
+            "type": ["null", "boolean"]
+        },
+        "listType": {
+            "type": ["null", "string"]
+        },
+        "readOnly": {
+            "type": ["null", "boolean"]
+        },
+        "deleteable": {
+            "type": ["null", "boolean"]
+        },
         "parentId": {
+            "type": ["null", "string"]
+        },
+        "internalListId": {
+            "type": ["null", "string"]
+        },
+        "portalId": {
             "type": ["null", "integer"]
         },
         "metaData": {
@@ -25,12 +60,6 @@
                     "format": "date-time"
                 }
             }
-        },
-        "dynamic": {
-            "type": ["null", "boolean"]
-        },
-        "name": {
-            "type": ["null", "string"]
         },
         "filters": {
             "type": "array",
@@ -63,35 +92,6 @@
                     }
                 }
             }
-        },
-        "portalId": {
-            "type": ["null", "integer"]
-        },
-        "createdAt": {
-            "type": ["null", "string"],
-            "format": "date-time"
-        },
-        "listId": {
-            "type": ["null", "integer"]
-        },
-        "updatedAt": {
-            "type": ["null", "string"],
-            "format": "date-time"
-        },
-        "internalListId": {
-            "type": ["null", "integer"]
-        },
-        "readOnly": {
-            "type": ["null", "boolean"]
-        },
-        "deleteable": {
-            "type": ["null", "boolean"]
-        },
-        "listType": {
-            "type": ["null", "string"]
-        },
-        "archived": {
-            "type": ["null", "boolean"]
         }
     }
 }
