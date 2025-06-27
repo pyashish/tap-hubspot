@@ -1010,7 +1010,7 @@ def sync_forms(STATE, ctx):
 
         # Use v3 API pagination with cursor-based approach
         if start:
-            params['after'] = int(start.timestamp() * 1000)  # Convert to milliseconds
+            params['after'] = int(utils.strptime_to_utc(start).timestamp() * 1000)  # Convert to milliseconds
 
         for row in get_v3_records('forms', url, params, 'results', 'paging'):
             record = bumble_bee.transform(lift_properties_and_versions(row), schema, mdata)
